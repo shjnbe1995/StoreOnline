@@ -1,0 +1,14 @@
+E:\StoreOnline\StoreOnline\Data\DataLayer\bin\Debug\net6.0\DataLayer.deps.json
+E:\StoreOnline\StoreOnline\Data\DataLayer\bin\Debug\net6.0\DataLayer.runtimeconfig.json
+E:\StoreOnline\StoreOnline\Data\DataLayer\bin\Debug\net6.0\DataLayer.dll
+E:\StoreOnline\StoreOnline\Data\DataLayer\bin\Debug\net6.0\DataLayer.pdb
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\DataLayer.csproj.AssemblyReference.cache
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfoInputs.cache
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\DataLayer.AssemblyInfo.cs
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\DataLayer.csproj.CoreCompileInputs.cache
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\DataLayer.dll
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\refint\DataLayer.dll
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\DataLayer.pdb
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\DataLayer.genruntimeconfig.cache
+E:\StoreOnline\StoreOnline\Data\DataLayer\obj\Debug\net6.0\ref\DataLayer.dll

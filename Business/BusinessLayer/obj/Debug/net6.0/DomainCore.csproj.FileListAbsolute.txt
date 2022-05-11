@@ -1,0 +1,15 @@
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\DomainCore.deps.json
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\DomainCore.dll
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\DomainCore.pdb
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\DataLayer.dll
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\DataLayer.pdb
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.csproj.AssemblyReference.cache
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.AssemblyInfoInputs.cache
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.AssemblyInfo.cs
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.csproj.CoreCompileInputs.cache
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.csproj.CopyComplete
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.dll
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\refint\DomainCore.dll
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.pdb
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\ref\DomainCore.dll

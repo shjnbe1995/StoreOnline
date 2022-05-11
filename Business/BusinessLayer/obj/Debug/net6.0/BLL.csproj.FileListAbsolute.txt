@@ -1,0 +1,15 @@
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\BLL.deps.json
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\BLL.dll
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\BLL.pdb
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\DataLayer.dll
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\bin\Debug\net6.0\DataLayer.pdb
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\BLL.csproj.CopyComplete
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\BLL.dll
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\refint\BLL.dll
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\BLL.pdb
+E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\ref\BLL.dll

@@ -13,3 +13,11 @@ E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.dl
 E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\refint\DomainCore.dll
 E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.pdb
 E:\StoreOnline\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\ref\DomainCore.dll
+E:\Coding\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.csproj.AssemblyReference.cache
+E:\Coding\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.AssemblyInfoInputs.cache
+E:\Coding\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.AssemblyInfo.cs
+E:\Coding\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.csproj.CoreCompileInputs.cache
+E:\Coding\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.dll
+E:\Coding\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\refint\DomainCore.dll
+E:\Coding\StoreOnline\Business\BusinessLayer\obj\Debug\net6.0\DomainCore.pdb

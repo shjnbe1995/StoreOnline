@@ -43,7 +43,7 @@ namespace DomainCore.UserBLL
             return await _user.DeleteUser(id); 
         }
                 
-        public async Task<ApplicationUser> UpdateUser(UserVM user)
+        public async Task UpdateUser(UserVM user)
         {
             if(user == null)
             {
@@ -56,7 +56,7 @@ namespace DomainCore.UserBLL
             if (!user.Email.EndsWith("@gmail.com")){
                 throw new NotImplementedException("Email does not match");
             }
-            return await _user.UpdateUser(user.Id,user.Password, user.NewPassword, user.Email);
+            await _user.UpdateUser(user.Id,user.Password, user.NewPassword, user.Email);
         }
     }
 }

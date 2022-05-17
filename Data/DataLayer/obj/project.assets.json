@@ -2877,11 +2877,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\StoreOnline\\StoreOnline\\Data\\DataLayer\\DataLayer.csproj",
+      "projectUniqueName": "E:\\Coding\\StoreOnline\\Data\\DataLayer\\DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "E:\\StoreOnline\\StoreOnline\\Data\\DataLayer\\DataLayer.csproj",
+      "projectPath": "E:\\Coding\\StoreOnline\\Data\\DataLayer\\DataLayer.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "E:\\StoreOnline\\StoreOnline\\Data\\DataLayer\\obj\\",
+      "outputPath": "E:\\Coding\\StoreOnline\\Data\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

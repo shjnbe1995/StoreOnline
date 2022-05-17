@@ -12,7 +12,9 @@ namespace DomainCore.UserBLL
     {
         Task<List<ApplicationUser>> GetAllUsers();
         Task<Guid> CreateNewUser(UserVM user);
-        Task<ApplicationUser> UpdateUser(UserVM user);
+        Task UpdateUser(UserVM user);
         Task<Boolean> DeleteUser(Guid id);
     }
+
+    // clean architecture - onion architecture
 }

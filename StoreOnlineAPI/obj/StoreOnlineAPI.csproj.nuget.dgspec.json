@@ -32,8 +32,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj"
+              "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj": {
+                "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj"
               }
             }
           }
@@ -124,12 +124,12 @@
         }
       }
     },
-    "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj": {
+    "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj",
-        "projectName": "Infrastructure",
-        "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj",
+        "projectName": "Infrastructure.Persistence",
+        "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
         "outputPath": "E:\\Coding\\StoreOnline\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
@@ -259,8 +259,8 @@
               "E:\\Coding\\StoreOnline\\Application\\Application.csproj": {
                 "projectPath": "E:\\Coding\\StoreOnline\\Application\\Application.csproj"
               },
-              "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj"
+              "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj": {
+                "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj"
               }
             }
           }

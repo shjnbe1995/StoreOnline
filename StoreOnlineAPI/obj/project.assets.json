@@ -729,7 +729,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Infrastructure": "1.0.0"
+          "Infrastructure.Persistence": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Application.dll": {}
@@ -748,7 +748,7 @@
           "bin/placeholder/Core.dll": {}
         }
       },
-      "Infrastructure/1.0.0": {
+      "Infrastructure.Persistence/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -762,10 +762,10 @@
           "Microsoft.Extensions.DependencyInjection": "6.0.0"
         },
         "compile": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/Infrastructure.Persistence.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/Infrastructure.Persistence.dll": {}
         }
       }
     }
@@ -2140,16 +2140,16 @@
       "path": "../Core/Core.csproj",
       "msbuildProject": "../Core/Core.csproj"
     },
-    "Infrastructure/1.0.0": {
+    "Infrastructure.Persistence/1.0.0": {
       "type": "project",
-      "path": "../Infrastructure/Infrastructure.csproj",
-      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+      "path": "../Infrastructure/Infrastructure.Persistence.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Application >= 1.0.0",
-      "Infrastructure >= 1.0.0",
+      "Infrastructure.Persistence >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -2188,8 +2188,8 @@
             "E:\\Coding\\StoreOnline\\Application\\Application.csproj": {
               "projectPath": "E:\\Coding\\StoreOnline\\Application\\Application.csproj"
             },
-            "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj"
+            "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj": {
+              "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj"
             }
           }
         }

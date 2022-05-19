@@ -2020,9 +2020,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj",
-      "projectName": "Infrastructure",
-      "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj",
+      "projectName": "Infrastructure.Persistence",
+      "projectPath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
       "outputPath": "E:\\Coding\\StoreOnline\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",

@@ -21,17 +21,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(typeof(Program));
-builder.Services.AddMediatR(typeof(EmployeeHandler).GetTypeInfo().Assembly);
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddTransient<IEmployeeRepository, EmployeeRepository>();
-
-/*builder.Services.AddDbContext<DatabaseContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-builder.Services.AddDefaultIdentity<IdentityUser<Guid>>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole<Guid>>()
-    .AddEntityFrameworkStores<DatabaseContext>()
-    .AddDefaultTokenProviders(); ;*/
 
 
 var app = builder.Build();

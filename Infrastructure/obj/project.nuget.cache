@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GOVhOZzMPRUHa67NjJw3ql0bX4Nin9aQoZLXpVrBHHL/dMZolrhSB1kceslZa3mVdpLH6Kj3tN0c8tbsR4Qh5Q==",
+  "dgSpecHash": "LarGmPUgWH6AOlWZn0jSqk7JitVG9EfkmH/hWrz6QBdTicX75Qv686ny0OSzHzH7DNkCHErrZL2aqVoUvW4mxQ==",
   "success": true,
-  "projectFilePath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "E:\\Coding\\StoreOnline\\Infrastructure\\Infrastructure.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

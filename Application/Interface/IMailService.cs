@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Queries
+namespace Application.Interfact
 {
-    public class GetAllEmployeeQuery
+    public interface IMailService
     {
-        public GetAllEmployeeQuery()
-        {
-
-        }
+        void SendMail(string subject, string body);
     }
 }

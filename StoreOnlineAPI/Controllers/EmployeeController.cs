@@ -14,17 +14,18 @@ namespace StoreOnlineAPI.Controllers
         {
             _mediator = mediator;
         }
-        [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<List<Employee>> Get()
-        {
-            return await _mediator.Send(new GetAllEmployeeQuery());
-        }
         [HttpPost]
-        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<EmployeeResponse>> CreateEmployee([FromBody] EmployeeCommand command)
         {
             var result = await _mediator.Send(command);
+            return Ok(result);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<EmployeeResponse>> GetEmployeeById([FromRoute] int id)
+        {
+            var request = new GetEmployeeByIdQuery() { EmployeeId = id };
+            var result = await _mediator.Send(request);
             return Ok(result);
         }
     }

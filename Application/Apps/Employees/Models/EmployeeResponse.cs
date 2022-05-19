@@ -1,19 +1,27 @@
-﻿using Application.Responses;
-using MediatR;
+﻿using AutoMapper;
+using Core.Identities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Commands
+namespace Application.Responses
 {
-    public class EmployeeCommand : IRequest<EmployeeResponse>
+    public class EmployeeResponse
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
+        public string Address { get; set; }
+        public class MappingProfile : Profile
+        {
+            public MappingProfile()
+            {
+                CreateMap<Employee, EmployeeResponse>().ReverseMap();
+            }
+        }
     }
 }

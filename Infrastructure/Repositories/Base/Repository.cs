@@ -22,6 +22,11 @@ namespace Infrastructure.Repositories.Base
             await _employeeContext.SaveChangesAsync();
             return entity;
         }
+        public async Task UpdateAsync(T entity)
+        {
+            _employeeContext.Set<T>().Update(entity);
+            await _employeeContext.SaveChangesAsync();
+        }
         public async Task DeleteAsync(T entity)
         {
             _employeeContext.Set<T>().Remove(entity);
@@ -34,10 +39,6 @@ namespace Infrastructure.Repositories.Base
         public async Task<T> GetByIdAsync(int id)
         {
             return await _employeeContext.Set<T>().FindAsync(id);
-        }
-        public Task UpdateAsync(T entity)
-        {
-            throw new NotImplementedException();
         }
     }
 }

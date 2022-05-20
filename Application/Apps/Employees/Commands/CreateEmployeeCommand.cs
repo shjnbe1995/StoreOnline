@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Application.Responses.EmployeeResponse;
 
 namespace Application.Apps.Employees.Commands
 {
@@ -30,20 +31,28 @@ namespace Application.Apps.Employees.Commands
                 _employeeRepo = employeeRepo;
                 _mapper = mapper;
             }
-            public Task<EmployeeResponse> Handle(CreateEmployeeCommand request, CancellationToken cancellationToken)
+            public async Task<EmployeeResponse> Handle(CreateEmployeeCommand request, CancellationToken cancellationToken)
             {
                 if (request == null)
                 {
-                    throw new ArgumentNullException("");
+                    throw new ArgumentNullException("No data in request");
                 }
-                // add new employee
-                var employeEntity = _mapper.Map<Employee>(request);
-                var newEmployee = _employeeRepo.AddAsync(employeEntity);
+
+                var config = new MapperConfiguration(cfg =>
+                {
+                    cfg.AddProfile(new MappingProfile());
+                });
+                var mapper = config.CreateMapper();
+                var employeeEntity = mapper.Map<CreateEmployeeCommand, Employee>(request);
+
+                var newEmployee = await _employeeRepo.AddAsync(employeeEntity);
+
                 if (newEmployee == null)
                 {
                     throw new ArgumentException("Error to add new employee");
                 }
-                return new EmployeeResponse.MappingProfile.CreateMap<EmployeeResponse, >;
+                var employeeDto = mapper.Map<Employee, EmployeeResponse>(employeeEntity);
+                return employeeDto;
             }
         }
     }

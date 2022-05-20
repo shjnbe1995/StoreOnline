@@ -1,4 +1,4 @@
-﻿using Application.Commands;
+﻿using Application.Apps.Employees.Commands;
 using Application.Queries;
 using Application.Responses;
 using Core.Identities;
@@ -15,7 +15,7 @@ namespace StoreOnlineAPI.Controllers
             _mediator = mediator;
         }
         [HttpPost]
-        public async Task<ActionResult<EmployeeResponse>> CreateEmployee([FromBody] EmployeeCommand command)
+        public async Task<ActionResult<EmployeeResponse>> CreateEmployee([FromBody] CreateEmployeeCommand command)
         {
             var result = await _mediator.Send(command);
             return Ok(result);

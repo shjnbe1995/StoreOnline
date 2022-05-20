@@ -11,8 +11,8 @@ namespace Infrastructure.Repositories.Base
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        protected readonly EmployeeContext _employeeContext;
-        public Repository(EmployeeContext employeeContext)
+        protected readonly StoreContext _employeeContext;
+        public Repository(StoreContext employeeContext)
         {
             _employeeContext = employeeContext;
         }

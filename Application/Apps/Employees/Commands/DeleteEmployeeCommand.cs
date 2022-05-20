@@ -35,7 +35,8 @@ namespace Application.Apps.Employees.Commands
                 {
                     throw new ArgumentNullException("Cannot find employee in database");
                 }
-                return _employeeRepo.DeleteAsync(empDb).IsCompletedSuccessfully ? true: false;
+
+                await _employeeRepo.DeleteAsync(empDb);
 
             }
         }

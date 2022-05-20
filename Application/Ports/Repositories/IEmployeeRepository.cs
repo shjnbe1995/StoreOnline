@@ -10,6 +10,6 @@ namespace Core.Repositories
 {
     public interface IEmployeeRepository : IRepository<Employee>
     {
-        //custom operations here
+
     }
 }

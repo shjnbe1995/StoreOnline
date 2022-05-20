@@ -37,20 +37,18 @@ namespace Application.Apps.Employees.Commands
                 {
                     throw new ArgumentNullException("No data in request");
                 }
+                
+                //var employeeEntity = mapper.Map<CreateEmployeeCommand, Employee>(request);
 
-                var config = new MapperConfiguration(cfg =>
-                {
-                    cfg.AddProfile(new MappingProfile());
-                });
-                var mapper = config.CreateMapper();
-                var employeeEntity = mapper.Map<CreateEmployeeCommand, Employee>(request);
-
-                var newEmployee = await _employeeRepo.AddAsync(employeeEntity);
+                var newEmployee = await _employeeRepo.AddAsync(S);
+                newEmployee.addAddress(address)
 
                 if (newEmployee == null)
                 {
                     throw new ArgumentException("Error to add new employee");
                 }
+
+
                 var employeeDto = mapper.Map<Employee, EmployeeResponse>(employeeEntity);
                 return employeeDto;
             }

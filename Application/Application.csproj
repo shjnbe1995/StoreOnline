@@ -7,13 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Apps\Users\**" />
+    <EmbeddedResource Remove="Apps\Users\**" />
+    <None Remove="Apps\Users\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Infrastructure\Infrastructure.Persistence.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Apps\Address\Commands\" />
     <Folder Include="Apps\Address\Queries\" />
-    <Folder Include="Apps\Users\" />
   </ItemGroup>
 
 </Project>

@@ -9,7 +9,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Application.Apps.Address.Models.AddressResponse;
 
 namespace Application.Apps.Employees.Commands
 {
@@ -23,24 +22,23 @@ namespace Application.Apps.Employees.Commands
         {
             private readonly IMapper _mapper;
             private readonly EmployeeRepository _employeeRepo;
-            public Handler(IMapper mapper, EmployeeRepository employeeRepo)
+            private readonly IMailService _mailService;
+            public Handler(IMapper mapper, EmployeeRepository employeeRepo, IMailService mailService)
             {
                 _employeeRepo = employeeRepo;
                 _mapper = mapper;
+                _mailService = mailService;
             }
 
             public async Task<EmployeeResponse> Handle(UpdateEmployeeCommand request, CancellationToken cancellationToken)
             {
+                
+
                 if (request == null)
                 {
                     throw new ArgumentNullException("No data in request");
                 }
 
-                var config = new MapperConfiguration(cfg =>
-                {
-                    cfg.AddProfile(new MappingProfile());
-                });
-                var mapper = config.CreateMapper();
                 var empEntity = mapper.Map<UpdateEmployeeCommand, Employee>(request);
 
                 var empDb = await _employeeRepo.GetByIdAsync(request.EmployeeId);

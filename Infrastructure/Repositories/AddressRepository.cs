@@ -12,7 +12,7 @@ namespace Infrastructure.Persistence.Repositories
 {
     public class AddressRepository: Repository<Address>, IAddressRepository
     {
-        public AddressRepository(EmployeeContext employeeContext) : base(employeeContext)
+        public AddressRepository(StoreContext employeeContext) : base(employeeContext)
         {
 
         }

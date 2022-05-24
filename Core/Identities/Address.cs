@@ -10,12 +10,17 @@ namespace Core.Identities
     public class Address
     {
         [Key]
-        public Guid Id {  get; set; }
-        public string Name { get; set; }
+        public int Id {  get; set; }
+        public string Description { get; set; }
+        public Country Country { get; set; }
+        public District District { get; set; }
+        public Ward Ward { get; set; }
+        public List<Employee> Employees { get; set; }
         // access modyfier
-        internal void UpdateName(string name)
+        internal void UpdateName(string description)
         {
-            Name = name;
+            Description = description;
         }
+        
     }
 }

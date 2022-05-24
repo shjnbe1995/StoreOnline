@@ -1,5 +1,4 @@
 ﻿using Core.Identities;
-using Core.Repositories;
 using Infrastructure.Data;
 using Infrastructure.Repositories.Base;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories
 {
+
     public class EmployeeRepository : Repository<Employee>, IEmployeeRepository
     {
         public EmployeeRepository(StoreContext employeeContext) : base(employeeContext) 

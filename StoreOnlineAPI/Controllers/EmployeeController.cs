@@ -20,7 +20,6 @@ namespace StoreOnlineAPI.Controllers
             var result = await _mediator.Send(command);
             return Ok(result);
         }
-
         [HttpGet("{id}")]
         public async Task<ActionResult<EmployeeResponse>> GetEmployeeById([FromRoute] int id)
         {

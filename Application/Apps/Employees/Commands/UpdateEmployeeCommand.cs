@@ -1,8 +1,8 @@
-﻿using Application.Responses;
+﻿using Application.Interfact;
+using Application.Ports.Repositories.Base;
+using Application.Responses;
 using AutoMapper;
 using Core.Identities;
-using Infrastructure.Data;
-using Infrastructure.Repositories;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -21,9 +21,9 @@ namespace Application.Apps.Employees.Commands
         public class Handler : IRequestHandler<UpdateEmployeeCommand, EmployeeResponse>
         {
             private readonly IMapper _mapper;
-            private readonly EmployeeRepository _employeeRepo;
+            private readonly IEmployeeRepository _employeeRepo;
             private readonly IMailService _mailService;
-            public Handler(IMapper mapper, EmployeeRepository employeeRepo, IMailService mailService)
+            public Handler(IMapper mapper, IEmployeeRepository employeeRepo, IMailService mailService)
             {
                 _employeeRepo = employeeRepo;
                 _mapper = mapper;
@@ -32,7 +32,7 @@ namespace Application.Apps.Employees.Commands
 
             public async Task<EmployeeResponse> Handle(UpdateEmployeeCommand request, CancellationToken cancellationToken)
             {
-                
+                /*
 
                 if (request == null)
                 {
@@ -50,7 +50,8 @@ namespace Application.Apps.Employees.Commands
                 await _employeeRepo.UpdateAsync(empUpdateDb);
 
                 var empDto = mapper.Map<Employee, EmployeeResponse>(empUpdateDb);
-                return empDto;
+                return empDto;*/
+                return new EmployeeResponse();
             }
         }
     }

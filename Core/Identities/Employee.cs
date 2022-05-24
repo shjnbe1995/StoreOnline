@@ -17,28 +17,23 @@ namespace Core.Identities
         public string PhoneNumber { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Email { get; set; }
-        //public string Address { get; set; }
-        public int AddresssId { get; set; }
-        public Address Addresss { get; set; }
-
-        OOP
-        void ChangeAddress(string name)
+        public List<Address> Address { get; set; }
+        public int WarehouseId { get; set; }
+        public Warehouse Warehouse { get; set; }
+        //OOP
+        void ChangeAddress(int addressId, string name)
         {
             if (name == null)
             {
                 throw new ArgumentNullException("No address data");
             }
-            Addresss.UpdateName(name);
+            foreach(var item in Address)
+            {
+                if(item.Id == addressId)
+                {
+                    item.UpdateName(name);
+                }
+            }
         }
-
-        //void AddAddress(string name)
-        //{
-        //    if (name == null)
-        //    {
-        //        throw new ArgumentNullException("No address data");
-        //    }
-        //    var c = new Address();
-        //    Addresss = c;
-        //}*/
     }
 }

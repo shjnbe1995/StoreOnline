@@ -1,0 +1,17 @@
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\Infrastructure.Persistence.csproj.AssemblyReference.cache
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\Infrastructure.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfoInputs.cache
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\Infrastructure.Persistence.AssemblyInfo.cs
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CoreCompileInputs.cache
+E:\Coding\StoreOnline\Infrastructure\bin\Debug\net6.0\Infrastructure.Persistence.deps.json
+E:\Coding\StoreOnline\Infrastructure\bin\Debug\net6.0\Infrastructure.Persistence.dll
+E:\Coding\StoreOnline\Infrastructure\bin\Debug\net6.0\Infrastructure.Persistence.pdb
+E:\Coding\StoreOnline\Infrastructure\bin\Debug\net6.0\Application.dll
+E:\Coding\StoreOnline\Infrastructure\bin\Debug\net6.0\Core.dll
+E:\Coding\StoreOnline\Infrastructure\bin\Debug\net6.0\Application.pdb
+E:\Coding\StoreOnline\Infrastructure\bin\Debug\net6.0\Core.pdb
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\Infrastructure.Persistence.csproj.CopyComplete
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\Infrastructure.Persistence.dll
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.Persistence.dll
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\Infrastructure.Persistence.pdb
+E:\Coding\StoreOnline\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.Persistence.dll

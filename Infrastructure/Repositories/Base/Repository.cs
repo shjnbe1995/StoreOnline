@@ -1,4 +1,4 @@
-﻿using Core.Repositories.Base;
+﻿using Application.Ports.Repositories.Base;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;

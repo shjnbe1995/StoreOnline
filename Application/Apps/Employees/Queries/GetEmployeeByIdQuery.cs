@@ -1,5 +1,5 @@
-﻿using Application.Responses;
-using Core.Repositories;
+﻿using Application.Ports.Repositories.Base;
+using Application.Responses;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -29,6 +29,7 @@ namespace Application.Queries
                 }
 
                 //return employeeResponse;
+                return new EmployeeResponse();
             }
         }
     }

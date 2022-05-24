@@ -1,9 +1,9 @@
-﻿using Application.Commands;
+﻿
+using Application.Ports.Repositories;
+using Application.Ports.Repositories.Base;
 using Application.Responses;
 using AutoMapper;
 using Core.Identities;
-using Infrastructure.Persistence.Repositories;
-using Infrastructure.Repositories;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -25,11 +25,13 @@ namespace Application.Apps.Employees.Commands
         public class Handler : IRequestHandler<CreateEmployeeCommand, EmployeeResponse>
         {
             private readonly IMapper _mapper;
-            private readonly EmployeeRepository _employeeRepo;
-            public Handler(EmployeeRepository employeeRepo, IMapper mapper)
+            private readonly IEmployeeRepository _employeeRepo;
+            private readonly IAddressRepository _addressRepo;
+            public Handler(IEmployeeRepository employeeRepo, IMapper mapper, IAddressRepository addressRepo)
             {
                 _employeeRepo = employeeRepo;
                 _mapper = mapper;
+                _addressRepo = addressRepo;
             }
             public async Task<EmployeeResponse> Handle(CreateEmployeeCommand request, CancellationToken cancellationToken)
             {
@@ -37,21 +39,18 @@ namespace Application.Apps.Employees.Commands
                 {
                     throw new ArgumentNullException("No data in request");
                 }
-                
-                //var employeeEntity = mapper.Map<CreateEmployeeCommand, Employee>(request);
+                var employeeEntity = _mapper.Map<Employee>(request);
 
-                var newEmployee = await _employeeRepo.AddAsync(S);
-                newEmployee.addAddress(address)
+                var newEmployee = await _employeeRepo.AddAsync(employeeEntity);
 
                 if (newEmployee == null)
                 {
                     throw new ArgumentException("Error to add new employee");
                 }
-
-
-                var employeeDto = mapper.Map<Employee, EmployeeResponse>(employeeEntity);
+                var employeeDto = _mapper.Map<EmployeeResponse>(employeeEntity);
                 return employeeDto;
             }
+
         }
     }
 }

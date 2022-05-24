@@ -1,5 +1,5 @@
-﻿using Core.Identities;
-using Core.Repositories;
+﻿using Application.Ports.Repositories;
+using Core.Identities;
 using Infrastructure.Data;
 using Infrastructure.Repositories.Base;
 using System;

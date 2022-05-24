@@ -20,7 +20,13 @@ namespace Application.Responses
         {
             public MappingProfile()
             {
-                CreateMap<Employee, EmployeeResponse>().ReverseMap();
+                CreateMap<Employee, EmployeeResponse>().ReverseMap()
+                    .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src=>src.FirstName))
+                    .ForMember(dest => dest.LastName, opt => opt.MapFrom(src => src.LastName))
+                    .ForMember(dest => dest.DateOfBirth, opt => opt.MapFrom(src => src.DateOfBirth))
+                    .ForMember(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.PhoneNumber))
+                    .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+                    .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.Address));
             }
         }
     }

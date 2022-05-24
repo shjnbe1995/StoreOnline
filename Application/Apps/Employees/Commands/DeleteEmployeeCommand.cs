@@ -1,6 +1,6 @@
-﻿using Application.Responses;
+﻿using Application.Ports.Repositories.Base;
+using Application.Responses;
 using AutoMapper;
-using Infrastructure.Repositories;
 using MediatR;
 using System;
 using System.Collections.Generic;
@@ -17,8 +17,8 @@ namespace Application.Apps.Employees.Commands
         public class Handler : IRequestHandler<DeleteEmployeeCommand, bool>
         {
             private readonly IMapper _mapper;
-            private readonly EmployeeRepository _employeeRepo;
-            public Handler(IMapper mapper, EmployeeRepository employeeRepo)
+            private readonly IEmployeeRepository _employeeRepo;
+            public Handler(IMapper mapper, IEmployeeRepository employeeRepo)
             {
                 _employeeRepo = employeeRepo;
                 _mapper = mapper;
@@ -37,7 +37,7 @@ namespace Application.Apps.Employees.Commands
                 }
 
                 await _employeeRepo.DeleteAsync(empDb);
-
+                return true;
             }
         }
     }
